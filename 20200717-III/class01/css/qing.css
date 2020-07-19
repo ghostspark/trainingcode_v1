@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background-color: #f5f5f5;
+}
+.content{
+    width: 1400px;
+    margin: 0 auto;/*水平居中*/
+}
+li{
+   list-style: none;  /* 取消li的默认点*/
+}
+.f_l{
+    float: left;/*左浮动*/
+}
+.header{
+   
+    background-color: #fff;
+    width: 100%;
+}
+.header_box{
+    width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;/*清除浮动*/
+}
+.header_box ul{
+    overflow: hidden;
+}
+.header_box ul li{
+    float: left;
+     line-height: 50px;/*垂直居中 */
+    margin:10px ;
+    padding: 10px;
+}
+.img_logo{
+    width: 150px;
+}
+.img_logo img{
+    width: 100%;
+}
+.login_box span{
+    display: inline-block;
+    line-height: 50px;
+    margin:10px ;
+    padding: 10px;
+    color: #888;
+}
+.login_box span.tg{
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    color: #fff;
+  padding: 4px 16px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;;
+}
+/*下半部分内容*/
+.box {
+    margin-top: 50px;
+}
+.big_l{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+}
+.big_nav ul {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.big_nav ul li{
+    float: left;
+    margin: 10px;
+    color: #666;
+    border-right: 1px solid #ccc;
+    border-color: hsla(0,0%,39%,.1);;
+    padding-right: 15px;
+}
+.big_nav ul li.on{
+    position: relative;/*相对定位*/
+}
+.big_nav ul li.on span{
+    position: absolute;/*绝对定位*/
+    border-bottom: 3px solid #1abc9c;
+    color: #1abc9c;
+    height: 2px;
+    width: 68px;
+
+    bottom: -10px;
+    left: 0;
+
+}
+.big_content{
+    overflow: hidden;
+    padding: 15px 10px;
+}
+.big_intro{
+    margin-left: 20px;
+    position: relative;
+    height: 155px;
+    width: 66%;
+}
+.big_intro h3{
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.big_intro h3:hover{
+    color: #1abc9c;
+}
+.big_intro  p{
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.time_box{
+   position: absolute;
+   bottom: -10px;
+}   
+.time_box span{
+    font-size: 12px;
+}
+.big_con_img {
+    width: 240px;
+}
+.big_con_img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.news_list .big_con_img {
+    width: 100px;
+}
+.news_list{
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 500px;
+}
+.box{
+    overflow: hidden;
+}
+.box_f1{
+    float: left;
+}
+.box_f1 img{
+    width: 80px;
+    margin: 3px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.news_f1{
+    position: relative;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}

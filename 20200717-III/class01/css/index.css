@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.index_head .hd {
+    height: 48px;
+    overflow: hidden;
+}
+.ns_area {
+    width: 1200px;
+    margin: 0px auto;
+}
+.index_head .hd h1 {
+    float: left;
+}
+.index_head .hd h1 a {
+    width: 140px;
+    height: 37px;
+    display: inline-block;
+    line-height: 1000px;
+    overflow: hidden;
+    background: url(https://static.ws.126.net/163/f2e/news/index2016_rmd/images/sprite_img20190530.png) no-repeat;
+}
+.index_head .bd {
+    border-top: 2px #f34540 solid;
+    border-bottom: 1px #eeeeee solid;
+}
+.index_head .bd .ns_area {
+    overflow: hidden;
+    height: 47px;
+    line-height: 47px;
+}
+.index_head .bd .ns_area li {
+    float: left;
+    font-size: 16px;
+    padding: 0px 26px 0px 21px;
+    background: url(http://static.ws.126.net/f2e/news/index2016/images/sprite_icon0813_v1.png) no-repeat 100% -53px;
+}
+.index_head .bd .ns_area a {
+    color: #000000;
+}
+a{
+    color: #404040;
+    text-decoration: none;
+}
+.idx_cm_title {
+    border-top: 1px #dddddd solid;
+    height: 41px;
+}
+.idx_cm_title .title {
+    border-top: 1px #f34540 solid;
+    font-size: 16px;
+    font-weight: bold;
+ 
+    position: relative;
+    
+   
+}
+.mod_hot_rank li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin: 0px 5px 3px 5px;
+    position: relative;
+    padding-right: 10px;
+}
+.mod_hot_rank .top em {
+    color: #f34540;
+    font-size: 26px;
+    margin-top: -1px;
+}
+.mod_hot_rank li a {
+
+    font-size: 14px;
+    width: 200px;
+    font-family: 宋体, 瀹嬩綋, Arial, sans-serif;
+}
+.mod_hot_rank li span {
+   
+    font-size: 14px;
+   
+    color: #f34540;
+}
+/*左侧*/
+.news_article {
+    position: relative;
+}
+.news_article .na_pic {
+    float: left;
+    _display: inline;
+    display: block;
+    width: 140px;
+    height: 88px;
+    overflow: hidden;
+}
+.news_article .na_pic img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.news_article .na_detail {
+    width: 445px;
+    margin-left: 15px;
+    float: left;
+    _display: inline;
+}
+.news_title h3 {
+    font: normal 20px/26px "Microsoft Yahei";
+    min-height: 40px;
+    padding-bottom: 14px;
+}
+.news_title h3 a {
+    color: #404040;
+    text-decoration: none;
+    font-weight: normal;
+}
+.news_tag {
+    float: left;
+    _display: inline;
+}
+.barlink {
+    float: left;
+    _display: inline;
+    margin-right: 10px;
+}
+.news_tag .keywords {
+    float: left;
+    _display: inline;
+    padding-right: 4px;
+    height: 12px;
+    line-height: 11px;
+    margin-top: 4px;
+    border-right: 1px solid #bbb;
+    max-width: 180px;
+    margin-right: 12px;
+}
+.barlink a {
+    position: relative;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+.barlink a, .barlink span {
+    float: left;
+    _display: inline;
+    font: normal 12px/16px "SimSun";
+    color: #ff9999;
+    padding: 1px 7px;
+    border: 1px solid #ff9999;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-right: 3px;
+    white-space: nowrap;
+}
+.news_tag span {
+    font: normal 12px/21px "SimSun";
+    color: #bbb;
+}
+.news_tag .keywords a {
+    font: normal 12px/12px "SimSun";
+    color: #888;
+    margin-right: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.mod_hot_rank{
+    float: right;
+}
+.news-l{
+    float: left;
+}
+.data_row{
+    overflow: hidden;
+    margin-top: 15px;
+}

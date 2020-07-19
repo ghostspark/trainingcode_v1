@@ -1,0 +1,61 @@
+*{           
+margin: 0;
+padding: 0;
+}
+p{
+    color: red;/*字体颜色*/
+    font-size: 14px;/*字体大小*/
+    text-align: center;/*zitijuzhong  left,right*/ 
+    line-height: 20px;
+    /* background: url(../img/01.png) no-repeat;
+    background-size: 100%; */
+    /* border: 1px solid red; */
+    border-bottom: 1px solid red;
+    width: 500px;
+    margin-bottom: 35px;
+
+}
+.f_l{
+    float: left;
+}
+.header{
+    overflow: hidden;
+    background-color: #888;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+  
+}
+
+.header li{
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    list-style: none;
+}
+.content{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.box{
+    overflow: hidden;
+    width: 1200px;
+    margin: 50px auto;
+}
+.newx_box{
+    width: 60%;
+    
+}
+
+.tag_news{
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+    padding: 2px 5px;
+    margin: 10px;
+    font-size: 12px;
+}
+.text_box span{
+    color: #888;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>当前计数{{count}}</h2>
+        <button @click="add1">+</button>
+        <button @click="decrement2">-</button>
+    </div>   
+</body>
+<script>
+    //1.当前计数：0
+    //click:新指令，用于监听某个元素的点击事件
+    //methods 用于Vue对象中定义方法
+    let app=new Vue({
+        el:'#app',
+        data:{
+            count:0
+        },
+        methods:{
+            add1(){
+                this.count++
+            },
+            decrement2(){
+                this.count--
+            },
+            getlist(){
+                this.name='www'
+            }
+        }
+    })
+</script>
+</html>
