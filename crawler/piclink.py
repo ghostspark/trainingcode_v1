@@ -3,9 +3,6 @@ import threading
 import datetime
 import signal
 
-#  Copyright (c) 2020. Zhangzhe
-#  https://home.asec01.net/
-
 savename = "link.txt"
 import sys
 import os
