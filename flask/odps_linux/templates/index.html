@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>展示</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<link href="../static/css/index.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+</head>
+
+<header>展示</header>
+<body>
+<div class="container m-20">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="box1">
+        <div class="title">你好，客户</div>
+        <img src="../static/images/head.jpg" style="width: 400px; height: 275px">
+      </div>
+      <div class="box2 m-20">
+        <div class="title">累计巡检时各启动项启动次数</div>
+        <div class="box2_con" id="box2"></div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="box3">
+        <div class="title"></div>
+        <div class="box3_con">
+          <div class="box3_con_left" id="box3_left">各项进程启动（/天）</div>
+          <div class="box3_con_right">
+            <div class="box3_con_right_top">
+              <div class="row">
+                <div class="col-lg-4 data_bg">
+                  <p>1台</p>
+                  <small>设备总数</small></div>
+                <div class="col-lg-4 data_bg">
+                  <p>1台</p>
+                  <small>运行设备</small></div>
+                <div class="col-lg-4 data_bg">
+                  <p>台</p>
+                  <small>报警设备</small></div>
+              </div>
+            </div>
+            <div class="box3_con_right_bot" id="box3_right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box4 m-20">
+        <div class="title">巡检时各启动项</div>
+        <div class="box4_con" id="box4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="../static/js/echarts.min.js"></script>
+<script type="text/javascript" src="../static/js/box1.js"></script>
+<script type="text/javascript" src="../static/js/box2.js"></script>
+<script type="text/javascript" src="../static/js/box3_left.js"></script>
+<script type="text/javascript" src="../static/js/box3_right.js"></script>
+<script type="text/javascript" src="../static/js/box4.js"></script>
+<script type="text/javascript" src="../static/js/box5.js"></script>
+</body>
+</html>
