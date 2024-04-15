@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+{% block page_content %}
+            <div>
+                <!--self.name, self.price, self.brand, self.volume, self.discuss, self.good_discuss, self.type-->
+                <table border=1 class="table table-striped table-bordered table-hover table-condensed table-responsive" style="margin-left: 10px; margin-right: 10px">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Brand</th>
+                        <th>Discuss</th>
+                        <th>TYPE</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for row in range(len_data) %}
+                        <tr>
+                            <th><a href={{ sum_data[row].url }}><img style="height: 198px; width: 194px" src={{ "../../static/img/{}.jpg".format(row) }}></a></th>
+                            <th><a style="color: black" href={{ sum_data[row].url }}>{{ sum_data[row].name }}</a></th>
+                            <th>{{ sum_data[row].price }}</th>
+                            <th>{{ sum_data[row].brand }}</th>
+                            <th>{{ sum_data[row].discuss }}</th>
+                            <th>{{ sum_data[row].type }}</th>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+            </div>
+{% endblock %}
+</body>

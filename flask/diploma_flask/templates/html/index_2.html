@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+{% block page_content %}
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <div class="hero">
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-pull-12 text-center">
+                    <h1 class="heading" data-aos="fade-up">Welcome!{{ name }}</h1>
+                    <form action="http://localhost:5000/properties"
+                          class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                          data-aos-delay="200" method="post" style="margin-top: 80px">
+                        <input type="text" class="form-control px-6" name="keys" placeholder="Enter your Commodity">
+                        <button type="submit" class="btn btn-primary" style="margin-top: 40px">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+</body>
+</html>

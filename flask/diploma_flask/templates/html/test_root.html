@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- 引入流式布局 -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- 引入栅格系统占用10列(默认共12等分) -->
+        <div class="col-md-10">
+            <table class="table table-bordered table-bordered table-hover table-condensed table-responsive" style="margin-left: 10px; margin-right: 10px">
+                <thead>
+                    <tr class='success'>
+                        <td>user</td>
+                        <td>password</td>
+                        <td>email</td>
+                        <td>action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in userlist %}
+                        <tr class='info'>
+                            <td>{{ i[0] }}</td>
+                            <td type='hidden'>{{ i[1] }}</td>
+                            <td>{{ i[2] }}</td>
+                            <td>
+                                <a class="btn btn-danger btn-xs" href="/delete/username={{i[0]}}">删除</a>
+                                <a class="btn btn-info btn-xs" href="/update-pw/username={{i[0]}}">修改密码</a>
+                                <a class="btn btn-info btn-xs" href="/update-ma/username={{i[0]}}">修改邮箱</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../static/html/images/favicon.png">
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content="bootstrap, bootstrap5"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../static/html/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../static/html/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="../../static/html/css/tiny-slider.css">
+    <link rel="stylesheet" href="../../static/html/css/aos.css">
+    <link rel="stylesheet" href="../../static/html/css/style.css">
+
+    <title>Property &mdash; Free Bootstrap 5 Website Template</title>
+</head>
+<body>
+
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav">
+    <div class="container">
+        <div class="menu-bg-wrap">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start">Property</a>
+
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-children active">
+                        <a href="properties.html">Properties</a>
+                        <ul class="dropdown">
+
+                            <li class="has-children">
+                                <a href="#">More</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <a href="#"
+                   class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                   data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="hero page-inner overlay" style="background-image: url('../../static/html/images/hero_bg_1.jpg');">
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Properties</h1>
+
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item "><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active text-white-50" aria-current="page">Properties</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="container">
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 text-center mx-auto">
+                <h2 class="font-weight-bold text-primary heading">Featured Properties</h2>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="section section-properties">
+    <div class="container">
+        <div class="row">
+            <div>
+                <!--self.name, self.price, self.brand, self.volume, self.discuss, self.good_discuss, self.type-->
+                <table border=1>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Brand</th>
+                        <th>Volume</th>
+                        <th>Discuss</th>
+                        <th>G_discuss</th>
+                        <th>TYPE</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for row in sum_data %}
+                        <tr>
+                            <th>{{ row.name }}</th>
+                            <th>{{ row.price }}</th>
+                            <th>{{ row.brand }}</th>
+                            <th>{{ row.volume }}</th>
+                            <th>{{ row.discuss }}</th>
+                            <th>{{ row.good_discuss }}</th>
+                            <th>{{ row.type }}</th>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="row align-items-center py-5">
+    <div class="col-lg-3">
+        Pagination (1 of 10)
+    </div>
+    <div class="col-lg-6 text-center">
+        <div class="custom-pagination">
+            <a href="#" class="active">1</a>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="site-footer">
+    <div class="container">
+
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+
+            </div>
+        </div>
+    </div> <!-- /.container -->
+</div> <!-- /.site-footer -->
+
+
+<!-- Preloader -->
+<div id="overlayer"></div>
+<div class="loader">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+
+<script src="../../static/html/js/bootstrap.bundle.min.js"></script>
+<script src="../../static/html/js/tiny-slider.js"></script>
+<script src="../../static/html/js/aos.js"></script>
+<script src="../../static/html/js/navbar.js"></script>
+<script src="../../static/html/js/counter.js"></script>
+<script src="../../static/html/js/custom.js"></script>
+</body>
+</html>

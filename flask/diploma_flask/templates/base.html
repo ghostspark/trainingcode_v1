@@ -1,0 +1,58 @@
+{% extends "bootstrap/base.html" %}
+ 
+{% block title %}Flask{% endblock %}
+{% block script %}
+    <meta name="description" content=""/>
+    <meta name="keywords" content="bootstrap, bootstrap5"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../static/html/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../static/html/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="../../static/html/css/tiny-slider.css">
+    <link rel="stylesheet" href="../../static/html/css/aos.css">
+    <link rel="stylesheet" href="../../static/html/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//i2.wp.com/cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//i2.wp.com/cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index">比价系统</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {%  if session['name'] == None %}
+                    <li><a href="/">登录</a></li>
+                {% else %}
+                    <li><a href="/user">登录</a></li>
+                {% endif %}
+                <li><a href="/register">注册</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% block page_content %}
+
+        {% endblock %}
+    </div>
+    <div class="table"></div>
+{% endblock %}
+

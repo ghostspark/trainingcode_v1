@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}update{% endblock %}
+
+{% block page_content %}
+<body>
+
+      <form action = "http://localhost:5000//update-ma/username=<name>" method="post">
+          <fieldset>
+              <legend>Update</legend>
+                        {{ forms.hidden_tag() }}
+
+                        <div style ="font-size:20px;font-weight:bold;margin-left:150px;">
+                           {{ forms.Email.label }}<br>
+                           {{ forms.Email }}
+                           <br>
+                            {% for message in forms.Email.errors %}
+                                <div>{{ message }}</div>
+                            {% endfor %}
+
+
+                            {{ forms.submit }}
+                        </div>
+          </fieldset>
+      </form>
+
+</body>
+{% endblock %}

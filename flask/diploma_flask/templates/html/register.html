@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}register{% endblock %}
+
+
+
+{% block page_content %}
+<html>
+   <body>
+      <h2 style = "text-align: center;">register</h2>
+
+      <form action = "http://localhost:5000/register" method="post" >
+          <fieldset>
+            <legend>Register</legend>
+            {{ form.hidden_tag() }}
+
+            <div style ="font-size:20px;font-weight:bold;margin-left:150px;">
+               {{ form.name.label }}<br>
+               {{ form.name }}
+               <br>
+                {% for message in form.name.errors %}
+                    <h6 style="color: red">{{ message }}</h6>
+                {% endfor %}
+
+               {{ form.Password.label }}<br>
+               {{ form.Password }}
+               <br>
+
+               {{ form.Confirm.label }}<br>
+               {{ form.Confirm }}
+               <br>
+                {% for message in form.Confirm.errors %}
+                    <h6 style="color: red">{{ message }}</h6>
+                {% endfor %}
+
+               {{ form.E_mail.label }}<br>
+               {{ form.E_mail }}
+               <br>
+                {% for message in form.E_mail.errors %}
+                    <h6 style="color: red">{{ message }}</h6>
+                {% endfor %}
+
+                {{ form.hidden_tag() }}
+               {{ form.submit }}
+            </div>
+
+         </fieldset>
+      </form>
+
+   </body>
+</html>
+{% endblock %}
